@@ -33,7 +33,6 @@
             <div class="login-content">
                 <form class="user" action="{{ route('forgetpassword') }}" method="post" id="forgetform">
                     @csrf
-                    {{-- <img src="{{ asset('loginfiles/img/avatar.svg')}}"> --}}
                     <h2 class="title">vous pouvez récupérer votre compte</h2>
                        <div class="input-div one">
                           <div class="i">
@@ -45,14 +44,11 @@
 
                           </div>
                     </div>
-
                           @error('email')
 
                                 <span class="text text-danger-center" style="display: inline;color:red;">
                                     {{ $message }}</span>
-
                          @enderror
-
 
 
                     <button type="submit" class="btn btn-primary btn-user btn-block">

@@ -1536,7 +1536,7 @@ class DemandeController extends Controller
 
             }
             for ($i=0; $i < count($element); $i++) {
-                $rectifier = Rectifier::all()->where('id_element',$element[$i]->id)->where('id_etat',3)->count();
+                $rectifier = Rectifier::all()->where('id_element',$element[$i]->id)->where('id_etat',4)->count();
                 $d=$rectifier+$d;
 
             }
