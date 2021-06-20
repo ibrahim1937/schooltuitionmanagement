@@ -41,19 +41,28 @@ class ForgetPasswordController extends Controller
          'created_at' => Carbon::now()
      ]);
 
-     // custume url to the reset password page
+     if($preset){
+       // custume url to the reset password page
      $url = env('APP_URL').'reset-password/'.$token;
 
-    $mailing = MailController::sendmail($this->title, $this->body, $url, $request->email);
-    if($mailing){
-      return [
-        'success' => 'Nous vous avons envoyé un email pour réinitialiser votre mot de passe'
-      ];
-    } else {
-      return [
+     $mailing = MailController::sendmail($this->title, $this->body, $url, $request->email);
+     if($mailing){
+       return [
+         'success' => 'Nous vous avons envoyé un email pour réinitialiser votre mot de passe'
+       ];
+     } else {
+       return [
+         'failemail' => 'une erreur s\'est produite lors de l\'envoi de l\'e-mail'
+       ];
+     }
+
+     } else {
+       return [
         'failemail' => 'une erreur s\'est produite lors de l\'envoi de l\'e-mail'
-      ];
-    }
+       ];
+     }
+
+     
     
   }
 

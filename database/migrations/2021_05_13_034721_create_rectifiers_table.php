@@ -15,10 +15,10 @@ class CreateRectifiersTable extends Migration
     {
         Schema::create('rectifiers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_etudiant')->constrained('etudiants');
+            $table->foreignId('id_etudiant')->constrained('etudiants')->onDelete('cascade');
             $table->foreignId('id_etat')->constrained('etats');
-            $table->foreignId('id_module')->constrained('modules');
-            $table->foreignId('id_element')->constrained('elements');
+            $table->foreignId('id_module')->constrained('modules')->onDelete('cascade');
+            $table->foreignId('id_element')->constrained('elements')->onDelete('cascade');
             $table->mediumText('commentaire')->nullable();
             $table->timestamps();;
         });

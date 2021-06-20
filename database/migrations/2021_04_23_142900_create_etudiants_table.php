@@ -16,7 +16,7 @@ class CreateEtudiantsTable extends Migration
         Schema::create('etudiants', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_user')->unsigned();
-            $table->foreignId('id_filiere')->constrained('filieres');
+            $table->foreignId('id_filiere')->constrained('filieres')->onDelete('cascade');
             $table->timestamps();
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
         });

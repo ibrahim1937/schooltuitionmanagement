@@ -44,11 +44,11 @@
 
                           </div>
                     </div>
-                          @error('email')
 
-                                <span class="text text-danger-center" style="display: inline;color:red;">
-                                    {{ $message }}</span>
-                         @enderror
+                    <div class="emailcontainer">
+                        
+                    </div>
+                       
 
 
                     <button type="submit" class="btn btn-primary btn-user btn-block">

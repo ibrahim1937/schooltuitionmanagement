@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Réinitialiser Votre mot de passe</title>
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style3.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
 		<div class="login-content">
 			<form action="{{ route('resetpassword') }}" method="post" id="resetform">
                 @csrf
+                <input type="hidden" name="token" value="{{ $token }}">
 				<h2 class="title">Réinitialiser Votre mot de passe</h2>
            		<div class="input-div one">
            		   <div class="i">
@@ -36,6 +37,10 @@
            		   		<input type="password" id="newPass" name="password" class="input" name="email">
 
            		   </div>
+                </div>
+
+                <div class="passwordcontainer">
+
                 </div>
 
 
@@ -50,6 +55,9 @@
             	   </div>
 
             	</div>
+                <div class="passwordcontainerc">
+
+                </div>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
                     changer le mot de passe
                 </button>

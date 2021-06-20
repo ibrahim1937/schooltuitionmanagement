@@ -15,7 +15,7 @@ class CreateDemandesTable extends Migration
     {
         Schema::create('demandes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_etudiant')->constrained('etudiants');
+            $table->foreignId('id_etudiant')->constrained('etudiants')->onDelete('cascade');
             $table->foreignId('id_etat')->constrained('etats');
             $table->foreignId('id_categorie')->constrained('categorie_demandes');
             $table->date('Date_livraison')->nullable();

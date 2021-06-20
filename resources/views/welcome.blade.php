@@ -65,7 +65,7 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Bienvenue dans <span>Services de scolarité</span></h2>
               <p class="animate__animated animate__fadeInUp">Les services de scolarité sont des lieux de contacts privilégiés entre les étudiant·e·s et l’université. Si vous étudiez dans un IUT, certaines des missions suivantes sont assurées par les secrétariats des départements.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Savoir Plus</a>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Accueillir et informer</h2>
               <p class="animate__animated animate__fadeInUp">Les services de scolarité vous informent sur les formations et les procédures relatives à l’inscription, quel que soit votre profil : nouveau·elle bachelier·ère, candidat·e à un diplôme à accès sélectif… Grâce aux scolarités, vous faites les bons choix d’orientation et comprenez quels enseignements sont obligatoires, facultatifs ou optionnels. L’annuaire de formation vous permet également de consulter toute l’offre de formation de l’Université de Rennes 1.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Savoir Plus</a>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Aider les étudiantes</h2>
               <p class="animate__animated animate__fadeInUp">Les scolarités accompagnent les étudiantes de l’université dans leurs démarches pour trouver leurs stages et les orientent vers les services compétents en matières de bourses, d’orientation, d’études à l’étranger, de difficultés sociales ou médicales ou de handicap.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Savoir Plus</a>
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ class ResetPasswordController extends Controller
                     $presetdelete = PasswordReset::find($preset->id)->delete();
                     
                     return [
-                        'success' => 'Le mot de passe a était change avec succes'
+                        'success' => 'votre mot de passe à été changé avec succès'
                     ];
                 } else {
                     return [

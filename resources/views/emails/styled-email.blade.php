@@ -3,7 +3,7 @@
 
 {{  $details['body'] }}
 @component('mail::button', ['url' => $details['url'], 'color' => 'success'])
-Connectez vous!!
+cliquez-ici
 @endcomponent
 
 @lang('Merci'),<br>
